@@ -15,7 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DisplayMessageActivity"></activity>
+        <activity android:name=".DisplayMessageActivity"
+            android:parentActivityName="com.test.jnguyen.hellojurytan.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.jnguyen.hellojurytan.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>
