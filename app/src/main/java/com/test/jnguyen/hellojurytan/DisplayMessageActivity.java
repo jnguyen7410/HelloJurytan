@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class DisplayMessageActivity extends AppCompatActivity {
 
@@ -25,6 +26,22 @@ public class DisplayMessageActivity extends AppCompatActivity {
         layout.addView(textView);
 
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    public void onStop() { super.onStop(); }
+
+    @Override
+    public void onRestart() { super.onRestart(); }
 
 
 }
